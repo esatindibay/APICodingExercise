@@ -173,32 +173,228 @@
                 </div>
                 <div class="step-row">
                     <div class="step-cell passed">* url endPoint</div>
-                    <div class="time-cell passed">0.00009</div>
+                    <div class="time-cell passed">0.000132</div>
                 </div>
-                <div class="preformatted">01:14:54.004 karate.env system property was:</div>
+                <div class="preformatted">17:10:51.411 karate.env system property was:</div>
                 <div class="step-row">
                     <div class="step-cell passed">* method get</div>
-                    <div class="time-cell passed">1.953352</div>
+                    <div class="time-cell passed">1.623118</div>
                 </div>
                 <div class="step-row">
                     <div class="step-cell passed">* status 200</div>
-                    <div class="time-cell passed">0.000042</div>
+                    <div class="time-cell passed">0.000046</div>
                 </div>
                 <div class="step-row">
                     <div class="step-cell passed">* match responseStatus == 200</div>
-                    <div class="time-cell passed">0.008938</div>
+                    <div class="time-cell passed">0.028545</div>
+                </div>
+            </div>
+            <div class="scenario">
+                <div class="scenario-heading">
+                    <span class="scenario-keyword">Scenario: [2:17]</span><span class="scenario-name">verify that response time is smaller than 500</span>
+                </div>
+                <div class="step-row">
+                    <div class="step-cell passed">* url endPoint</div>
+                    <div class="time-cell passed">0.000037</div>
+                </div>
+                <div class="preformatted">17:10:53.292 karate.env system property was:</div>
+                <div class="step-row">
+                    <div class="step-cell passed">* method get</div>
+                    <div class="time-cell passed">0.350369</div>
                 </div>
                 <div class="step-row">
                     <div class="step-cell passed">* print responseTime</div>
-                    <div class="time-cell passed">0.000729</div>
+                    <div class="time-cell passed">0.000599</div>
                 </div>
-                <div class="preformatted">01:14:56.099 [print] 1494</div>
+                <div class="preformatted">17:10:53.646 [print] 347</div>
                 <div class="step-row">
-                    <div class="step-cell failed">* assert responseTime &lt; 500</div>
-                    <div class="time-cell failed">0.028356</div>
+                    <div class="step-cell passed">* assert responseTime &lt; 500</div>
+                    <div class="time-cell passed">0.008187</div>
                 </div>
-                <div class="preformatted">01:14:56.128 assertion failed: assert evaluated to false: responseTime &lt; 500
-person.feature:17 - assert evaluated to false: responseTime &lt; 500</div>
+            </div>
+            <div class="scenario">
+                <div class="scenario-heading">
+                    <span class="scenario-keyword">Scenario: [3:22]</span><span class="scenario-name">display the response body</span>
+                </div>
+                <div class="step-row">
+                    <div class="step-cell passed">* url endPoint</div>
+                    <div class="time-cell passed">0.000033</div>
+                </div>
+                <div class="preformatted">17:10:53.668 karate.env system property was:</div>
+                <div class="step-row">
+                    <div class="step-cell passed">* method get</div>
+                    <div class="time-cell passed">0.565635</div>
+                </div>
+                <div class="step-row">
+                    <div class="step-cell passed">* assert responseStatus == 200</div>
+                    <div class="time-cell passed">0.005149</div>
+                </div>
+                <div class="step-row">
+                    <div class="step-cell passed">* print response</div>
+                    <div class="time-cell passed">0.000604</div>
+                </div>
+                <div class="preformatted">17:10:54.241 [print] {
+  "last": "Doe",
+  "gender": "M",
+  "name": "John",
+  "id": 1,
+  "age": 40
+}</div>
+            </div>
+            <div class="scenario">
+                <div class="scenario-heading">
+                    <span class="scenario-keyword">Scenario: [4:29]</span><span class="scenario-name">validate id is positive</span>
+                </div>
+                <div class="step-row">
+                    <div class="step-cell passed">* url endPoint</div>
+                    <div class="time-cell passed">0.000057</div>
+                </div>
+                <div class="preformatted">17:10:54.254 karate.env system property was:</div>
+                <div class="step-row">
+                    <div class="step-cell passed">* method get</div>
+                    <div class="time-cell passed">0.474097</div>
+                </div>
+                <div class="step-row">
+                    <div class="step-cell passed">* def getId = response.id</div>
+                    <div class="time-cell passed">0.013784</div>
+                </div>
+                <div class="step-row">
+                    <div class="step-cell passed">* print 'id = ' + getId</div>
+                    <div class="time-cell passed">0.008117</div>
+                </div>
+                <div class="preformatted">17:10:54.752 [print] id = 1</div>
+                <div class="step-row">
+                    <div class="step-cell passed">* assert getId &gt; 0</div>
+                    <div class="time-cell passed">0.007819</div>
+                </div>
+            </div>
+            <div class="scenario">
+                <div class="scenario-heading">
+                    <span class="scenario-keyword">Scenario: [5:35]</span><span class="scenario-name">validate name length is smaller than 11</span>
+                </div>
+                <div class="step-row">
+                    <div class="step-cell passed">* url endPoint</div>
+                    <div class="time-cell passed">0.000049</div>
+                </div>
+                <div class="preformatted">17:10:54.784 karate.env system property was:</div>
+                <div class="step-row">
+                    <div class="step-cell passed">* method get</div>
+                    <div class="time-cell passed">1.373727</div>
+                </div>
+                <div class="step-row">
+                    <div class="step-cell passed">* string getName = response.name</div>
+                    <div class="time-cell passed">0.005541</div>
+                </div>
+                <div class="step-row">
+                    <div class="step-cell passed">* def nameLength = getName.length</div>
+                    <div class="time-cell passed">0.010066</div>
+                </div>
+                <div class="step-row">
+                    <div class="step-cell passed">* print 'name length: ' + nameLength</div>
+                    <div class="time-cell passed">0.005688</div>
+                </div>
+                <div class="preformatted">17:10:56.181 [print] name length: 4</div>
+                <div class="step-row">
+                    <div class="step-cell passed">* assert nameLength &lt; 11</div>
+                    <div class="time-cell passed">0.008455</div>
+                </div>
+            </div>
+            <div class="scenario">
+                <div class="scenario-heading">
+                    <span class="scenario-keyword">Scenario: [6:41]</span><span class="scenario-name">validate lastname length is smaller than 11</span>
+                </div>
+                <div class="step-row">
+                    <div class="step-cell passed">* url endPoint</div>
+                    <div class="time-cell passed">0.000029</div>
+                </div>
+                <div class="preformatted">17:10:56.205 karate.env system property was:</div>
+                <div class="step-row">
+                    <div class="step-cell passed">* method get</div>
+                    <div class="time-cell passed">0.397359</div>
+                </div>
+                <div class="step-row">
+                    <div class="step-cell passed">* string getLast = response.last</div>
+                    <div class="time-cell passed">0.010461</div>
+                </div>
+                <div class="step-row">
+                    <div class="step-cell passed">* def lastLength = getLast.length</div>
+                    <div class="time-cell passed">0.00461</div>
+                </div>
+                <div class="step-row">
+                    <div class="step-cell passed">* print 'lastname length: ' + lastLength</div>
+                    <div class="time-cell passed">0.005906</div>
+                </div>
+                <div class="preformatted">17:10:56.625 [print] lastname length: 3</div>
+                <div class="step-row">
+                    <div class="step-cell passed">* assert lastLength &lt; 11</div>
+                    <div class="time-cell passed">0.00607</div>
+                </div>
+            </div>
+            <div class="scenario">
+                <div class="scenario-heading">
+                    <span class="scenario-keyword">Scenario: [7:47]</span><span class="scenario-name">validate that age is between 0 and 120</span>
+                </div>
+                <div class="step-row">
+                    <div class="step-cell passed">* url endPoint</div>
+                    <div class="time-cell passed">0.000038</div>
+                </div>
+                <div class="preformatted">17:10:56.646 karate.env system property was:</div>
+                <div class="step-row">
+                    <div class="step-cell passed">* method get</div>
+                    <div class="time-cell passed">0.410936</div>
+                </div>
+                <div class="step-row">
+                    <div class="step-cell passed">* def getAge = response.age</div>
+                    <div class="time-cell passed">0.018467</div>
+                </div>
+                <div class="step-row">
+                    <div class="step-cell passed">* assert getAge &gt; 0 &amp;&amp; getAge &lt; 120</div>
+                    <div class="time-cell passed">0.015052</div>
+                </div>
+            </div>
+            <div class="scenario">
+                <div class="scenario-heading">
+                    <span class="scenario-keyword">Scenario: [8:51]</span><span class="scenario-name">validate gender is nothing but F or M</span>
+                </div>
+                <div class="step-row">
+                    <div class="step-cell passed">* url endPoint</div>
+                    <div class="time-cell passed">0.000046</div>
+                </div>
+                <div class="preformatted">17:10:57.118 karate.env system property was:</div>
+                <div class="step-row">
+                    <div class="step-cell passed">* method get</div>
+                    <div class="time-cell passed">1.405689</div>
+                </div>
+                <div class="step-row">
+                    <div class="step-cell passed">* string getGender = response.gender</div>
+                    <div class="time-cell passed">0.005736</div>
+                </div>
+                <div class="step-row">
+                    <div class="step-cell passed">* assert getGender == "M" || "F"</div>
+                    <div class="time-cell passed">0.015203</div>
+                </div>
+            </div>
+            <div class="scenario">
+                <div class="scenario-heading">
+                    <span class="scenario-keyword">Scenario: [9:57]</span><span class="scenario-name">validating the response data structure</span>
+                </div>
+                <div class="step-row">
+                    <div class="step-cell passed">* url endPoint</div>
+                    <div class="time-cell passed">0.000038</div>
+                </div>
+                <div class="preformatted">17:10:58.559 karate.env system property was:</div>
+                <div class="step-row">
+                    <div class="step-cell passed">* method get</div>
+                    <div class="time-cell passed">0.55439</div>
+                </div>
+                <div class="step-row">
+                    <div class="step-cell passed">* def getSchema = read('classpath:examples/schema/personSchema.json')</div>
+                    <div class="time-cell passed">0.007391</div>
+                </div>
+                <div class="step-row">
+                    <div class="step-cell passed">* match response == getSchema</div>
+                    <div class="time-cell passed">0.034951</div>
+                </div>
             </div>
         </div>
     </body>

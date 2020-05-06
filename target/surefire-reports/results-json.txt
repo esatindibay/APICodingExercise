@@ -1,1 +1,1 @@
-{"features":1,"ignored":0,"efficiency":0.4450294502793296,"failures":{"src.test.java.examples.person.person":"person.feature:17 - assert evaluated to false: responseTime < 500"},"totalTime":1991.50679,"threads":1,"scenarios":1,"failed":1,"passed":0,"version":"0.9.5","elapsedTime":4475.0}
+{"features":1,"ignored":0,"efficiency":0.6517369800476737,"failures":null,"totalTime":7382.224773,"threads":1,"scenarios":9,"failed":0,"passed":9,"version":"0.9.5","elapsedTime":11327.0}

@@ -416,3 +416,118 @@
 01:14:56.099 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] 1494
 01:14:56.127 [ForkJoinPool-1-worker-3] ERROR com.intuit.karate - assertion failed: assert evaluated to false: responseTime < 500
 01:14:56.355 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<fail>> feature 1 of 1: src/test/java/examples/person/person.feature
+17:06:36.912 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+17:06:37.630 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+17:06:39.915 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] 847
+17:06:39.943 [ForkJoinPool-1-worker-3] ERROR com.intuit.karate - assertion failed: assert evaluated to false: responseTime < 500
+17:06:40.056 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+17:06:40.578 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] {
+  "last": "Doe",
+  "gender": "M",
+  "name": "John",
+  "id": 1,
+  "age": 40
+}
+
+17:06:40.596 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+17:06:41.178 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] id = 1
+17:06:41.195 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+17:06:41.770 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] name length: 4
+17:06:41.792 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+17:06:42.366 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] lastname length: 3
+17:06:42.394 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+17:06:42.965 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+17:06:43.610 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+17:06:44.320 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<fail>> feature 1 of 1: src/test/java/examples/person/person.feature
+17:07:00.915 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+17:07:01.546 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+17:07:02.801 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] 510
+17:07:02.810 [ForkJoinPool-1-worker-3] ERROR com.intuit.karate - assertion failed: assert evaluated to false: responseTime < 500
+17:07:02.835 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+17:07:03.262 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] {
+  "last": "Doe",
+  "gender": "M",
+  "name": "John",
+  "id": 1,
+  "age": 40
+}
+
+17:07:03.275 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+17:07:03.670 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] id = 1
+17:07:03.693 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+17:07:04.164 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] name length: 4
+17:07:04.183 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+17:07:05.595 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] lastname length: 3
+17:07:05.624 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+17:07:06.055 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+17:07:06.595 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+17:07:08.205 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<fail>> feature 1 of 1: src/test/java/examples/person/person.feature
+17:07:40.083 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+17:07:40.871 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+17:07:42.181 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] 614
+17:07:42.208 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+17:07:42.560 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] {
+  "last": "Doe",
+  "gender": "M",
+  "name": "John",
+  "id": 1,
+  "age": 40
+}
+
+17:07:42.572 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+17:07:43.169 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] id = 1
+17:07:43.192 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+17:07:43.762 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] name length: 4
+17:07:43.783 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+17:07:44.357 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] lastname length: 3
+17:07:44.395 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+17:07:46.062 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+17:07:46.873 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+17:07:47.570 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 1: src/test/java/examples/person/person.feature
+17:08:59.558 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+17:09:00.435 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+17:09:01.953 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+17:09:02.483 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] 523
+17:09:02.508 [ForkJoinPool-1-worker-3] ERROR com.intuit.karate - assertion failed: assert evaluated to false: responseTime < 500
+17:09:02.522 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+17:09:03.057 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] {
+  "last": "Doe",
+  "gender": "M",
+  "name": "John",
+  "id": 1,
+  "age": 40
+}
+
+17:09:03.072 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+17:09:03.671 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] id = 1
+17:09:03.697 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+17:09:04.253 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] name length: 4
+17:09:04.277 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+17:09:04.692 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] lastname length: 3
+17:09:04.737 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+17:09:05.165 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+17:09:05.742 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+17:09:06.700 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<fail>> feature 1 of 1: src/test/java/examples/person/person.feature
+17:10:50.478 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+17:10:51.406 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+17:10:53.292 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+17:10:53.645 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] 347
+17:10:53.667 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+17:10:54.241 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] {
+  "last": "Doe",
+  "gender": "M",
+  "name": "John",
+  "id": 1,
+  "age": 40
+}
+
+17:10:54.253 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+17:10:54.751 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] id = 1
+17:10:54.783 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+17:10:56.181 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] name length: 4
+17:10:56.205 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+17:10:56.625 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] lastname length: 3
+17:10:56.646 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+17:10:57.118 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+17:10:58.559 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+17:10:59.570 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 1: src/test/java/examples/person/person.feature

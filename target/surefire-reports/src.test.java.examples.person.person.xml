@@ -1,14 +1,224 @@
-<testsuite failures="1" name="src/test/java/examples/person/person.feature" skipped="0" tests="1" time="1.991507">
-  <testcase classname="src.test.java.examples.person.person" name="verify HTTP status code is 200 OK for GET method" time="1.991507">
-    <failure message="person.feature:17 - assert evaluated to false: responseTime &lt; 500">* url endPoint ............................................................ passed
+<testsuite failures="0" name="src/test/java/examples/person/person.feature" skipped="0" tests="9" time="7.382225">
+  <testcase classname="src.test.java.examples.person.person" name="verify HTTP status code is 200 OK for GET method" time="1.651841">
+    <system-out>* url endPoint ............................................................ passed
+* method get .............................................................. passed
+* status 200 .............................................................. passed
+* match responseStatus == 200 ............................................. passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.examples.person.person" name="verify that response time is smaller than 500" time="0.359192">
+    <system-out>* url endPoint ............................................................ passed
 * method get .............................................................. passed
 * status 200 .............................................................. passed
 * match responseStatus == 200 ............................................. passed
+* url endPoint ............................................................ passed
+* method get .............................................................. passed
 * print responseTime ...................................................... passed
-* assert responseTime &lt; 500 ............................................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: person.feature:17 - assert evaluated to false: responseTime &lt; 500&#13;
-	at ✽.* assert responseTime &lt; 500 (person.feature:17)</failure>
+* assert responseTime &lt; 500 ............................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.examples.person.person" name="display the response body" time="0.571421">
+    <system-out>* url endPoint ............................................................ passed
+* method get .............................................................. passed
+* status 200 .............................................................. passed
+* match responseStatus == 200 ............................................. passed
+* url endPoint ............................................................ passed
+* method get .............................................................. passed
+* print responseTime ...................................................... passed
+* assert responseTime &lt; 500 ............................................... passed
+* url endPoint ............................................................ passed
+* method get .............................................................. passed
+* assert responseStatus == 200 ............................................ passed
+* print response .......................................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.examples.person.person" name="validate id is positive" time="0.503874">
+    <system-out>* url endPoint ............................................................ passed
+* method get .............................................................. passed
+* status 200 .............................................................. passed
+* match responseStatus == 200 ............................................. passed
+* url endPoint ............................................................ passed
+* method get .............................................................. passed
+* print responseTime ...................................................... passed
+* assert responseTime &lt; 500 ............................................... passed
+* url endPoint ............................................................ passed
+* method get .............................................................. passed
+* assert responseStatus == 200 ............................................ passed
+* print response .......................................................... passed
+* url endPoint ............................................................ passed
+* method get .............................................................. passed
+* def getId = response.id ................................................. passed
+* print 'id = ' + getId ................................................... passed
+* assert getId &gt; 0 ........................................................ passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.examples.person.person" name="validate name length is smaller than 11" time="1.403526">
+    <system-out>* url endPoint ............................................................ passed
+* method get .............................................................. passed
+* status 200 .............................................................. passed
+* match responseStatus == 200 ............................................. passed
+* url endPoint ............................................................ passed
+* method get .............................................................. passed
+* print responseTime ...................................................... passed
+* assert responseTime &lt; 500 ............................................... passed
+* url endPoint ............................................................ passed
+* method get .............................................................. passed
+* assert responseStatus == 200 ............................................ passed
+* print response .......................................................... passed
+* url endPoint ............................................................ passed
+* method get .............................................................. passed
+* def getId = response.id ................................................. passed
+* print 'id = ' + getId ................................................... passed
+* assert getId &gt; 0 ........................................................ passed
+* url endPoint ............................................................ passed
+* method get .............................................................. passed
+* string getName = response.name .......................................... passed
+* def nameLength = getName.length ......................................... passed
+* print 'name length: ' + nameLength ...................................... passed
+* assert nameLength &lt; 11 .................................................. passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.examples.person.person" name="validate lastname length is smaller than 11" time="0.424434">
+    <system-out>* url endPoint ............................................................ passed
+* method get .............................................................. passed
+* status 200 .............................................................. passed
+* match responseStatus == 200 ............................................. passed
+* url endPoint ............................................................ passed
+* method get .............................................................. passed
+* print responseTime ...................................................... passed
+* assert responseTime &lt; 500 ............................................... passed
+* url endPoint ............................................................ passed
+* method get .............................................................. passed
+* assert responseStatus == 200 ............................................ passed
+* print response .......................................................... passed
+* url endPoint ............................................................ passed
+* method get .............................................................. passed
+* def getId = response.id ................................................. passed
+* print 'id = ' + getId ................................................... passed
+* assert getId &gt; 0 ........................................................ passed
+* url endPoint ............................................................ passed
+* method get .............................................................. passed
+* string getName = response.name .......................................... passed
+* def nameLength = getName.length ......................................... passed
+* print 'name length: ' + nameLength ...................................... passed
+* assert nameLength &lt; 11 .................................................. passed
+* url endPoint ............................................................ passed
+* method get .............................................................. passed
+* string getLast = response.last .......................................... passed
+* def lastLength = getLast.length ......................................... passed
+* print 'lastname length: ' + lastLength .................................. passed
+* assert lastLength &lt; 11 .................................................. passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.examples.person.person" name="validate that age is between 0 and 120" time="0.444493">
+    <system-out>* url endPoint ............................................................ passed
+* method get .............................................................. passed
+* status 200 .............................................................. passed
+* match responseStatus == 200 ............................................. passed
+* url endPoint ............................................................ passed
+* method get .............................................................. passed
+* print responseTime ...................................................... passed
+* assert responseTime &lt; 500 ............................................... passed
+* url endPoint ............................................................ passed
+* method get .............................................................. passed
+* assert responseStatus == 200 ............................................ passed
+* print response .......................................................... passed
+* url endPoint ............................................................ passed
+* method get .............................................................. passed
+* def getId = response.id ................................................. passed
+* print 'id = ' + getId ................................................... passed
+* assert getId &gt; 0 ........................................................ passed
+* url endPoint ............................................................ passed
+* method get .............................................................. passed
+* string getName = response.name .......................................... passed
+* def nameLength = getName.length ......................................... passed
+* print 'name length: ' + nameLength ...................................... passed
+* assert nameLength &lt; 11 .................................................. passed
+* url endPoint ............................................................ passed
+* method get .............................................................. passed
+* string getLast = response.last .......................................... passed
+* def lastLength = getLast.length ......................................... passed
+* print 'lastname length: ' + lastLength .................................. passed
+* assert lastLength &lt; 11 .................................................. passed
+* url endPoint ............................................................ passed
+* method get .............................................................. passed
+* def getAge = response.age ............................................... passed
+* assert getAge &gt; 0 &amp;&amp; getAge &lt; 120 ....................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.examples.person.person" name="validate gender is nothing but F or M" time="1.426674">
+    <system-out>* url endPoint ............................................................ passed
+* method get .............................................................. passed
+* status 200 .............................................................. passed
+* match responseStatus == 200 ............................................. passed
+* url endPoint ............................................................ passed
+* method get .............................................................. passed
+* print responseTime ...................................................... passed
+* assert responseTime &lt; 500 ............................................... passed
+* url endPoint ............................................................ passed
+* method get .............................................................. passed
+* assert responseStatus == 200 ............................................ passed
+* print response .......................................................... passed
+* url endPoint ............................................................ passed
+* method get .............................................................. passed
+* def getId = response.id ................................................. passed
+* print 'id = ' + getId ................................................... passed
+* assert getId &gt; 0 ........................................................ passed
+* url endPoint ............................................................ passed
+* method get .............................................................. passed
+* string getName = response.name .......................................... passed
+* def nameLength = getName.length ......................................... passed
+* print 'name length: ' + nameLength ...................................... passed
+* assert nameLength &lt; 11 .................................................. passed
+* url endPoint ............................................................ passed
+* method get .............................................................. passed
+* string getLast = response.last .......................................... passed
+* def lastLength = getLast.length ......................................... passed
+* print 'lastname length: ' + lastLength .................................. passed
+* assert lastLength &lt; 11 .................................................. passed
+* url endPoint ............................................................ passed
+* method get .............................................................. passed
+* def getAge = response.age ............................................... passed
+* assert getAge &gt; 0 &amp;&amp; getAge &lt; 120 ....................................... passed
+* url endPoint ............................................................ passed
+* method get .............................................................. passed
+* string getGender = response.gender ...................................... passed
+* assert getGender == "M" || "F" .......................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.examples.person.person" name="validating the response data structure" time="0.596771">
+    <system-out>* url endPoint ............................................................ passed
+* method get .............................................................. passed
+* status 200 .............................................................. passed
+* match responseStatus == 200 ............................................. passed
+* url endPoint ............................................................ passed
+* method get .............................................................. passed
+* print responseTime ...................................................... passed
+* assert responseTime &lt; 500 ............................................... passed
+* url endPoint ............................................................ passed
+* method get .............................................................. passed
+* assert responseStatus == 200 ............................................ passed
+* print response .......................................................... passed
+* url endPoint ............................................................ passed
+* method get .............................................................. passed
+* def getId = response.id ................................................. passed
+* print 'id = ' + getId ................................................... passed
+* assert getId &gt; 0 ........................................................ passed
+* url endPoint ............................................................ passed
+* method get .............................................................. passed
+* string getName = response.name .......................................... passed
+* def nameLength = getName.length ......................................... passed
+* print 'name length: ' + nameLength ...................................... passed
+* assert nameLength &lt; 11 .................................................. passed
+* url endPoint ............................................................ passed
+* method get .............................................................. passed
+* string getLast = response.last .......................................... passed
+* def lastLength = getLast.length ......................................... passed
+* print 'lastname length: ' + lastLength .................................. passed
+* assert lastLength &lt; 11 .................................................. passed
+* url endPoint ............................................................ passed
+* method get .............................................................. passed
+* def getAge = response.age ............................................... passed
+* assert getAge &gt; 0 &amp;&amp; getAge &lt; 120 ....................................... passed
+* url endPoint ............................................................ passed
+* method get .............................................................. passed
+* string getGender = response.gender ...................................... passed
+* assert getGender == "M" || "F" .......................................... passed
+* url endPoint ............................................................ passed
+* method get .............................................................. passed
+* def getSchema = read('classpath:examples/schema/personSchema.json') ..... passed
+* match response == getSchema ............................................. passed</system-out>
   </testcase>
 </testsuite>

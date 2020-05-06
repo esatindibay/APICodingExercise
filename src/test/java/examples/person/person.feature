@@ -13,9 +13,11 @@ Feature: Validating the sample response
       #below two statements are checking the status code
       * status 200
       * match responseStatus == 200
+
+    Scenario: verify that response time is smaller than 500
       * print responseTime
       * assert responseTime < 500
-      # if respose time is greater than 500 ms this scenario will fail
+      # if response time is greater than 500 ms this scenario will fail
 
   Scenario: display the response body
 
