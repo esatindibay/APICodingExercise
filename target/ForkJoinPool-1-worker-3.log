@@ -1,0 +1,21 @@
+01:14:54.004 karate.env system property was:  
+01:14:56.099 [print] 1494
+01:14:56.128 assertion failed: assert evaluated to false: responseTime < 500
+01:14:17.674 karate.env system property was:  
+01:14:18.325 [print] {
+  "last": "Doe",
+  "gender": "M",
+  "name": "John",
+  "id": 1,
+  "age": 40
+}
+
+01:14:18.336 karate.env system property was:  
+01:14:19.868 [print] id = 1
+01:14:19.889 karate.env system property was:  
+01:14:20.219 [print] name length: 4
+01:14:20.236 karate.env system property was:  
+01:14:20.742 [print] lastname length: 3
+01:14:20.774 karate.env system property was:  
+01:14:21.176 karate.env system property was:  
+01:14:21.685 karate.env system property was:  

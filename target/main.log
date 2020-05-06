@@ -1,0 +1,19 @@
+00:12:57.283 karate.env system property was:  
+00:12:58.078 [print] 350
+00:12:58.098 karate.env system property was:  
+00:12:58.532 [print] {
+  "last": "Doe",
+  "gender": "M",
+  "name": "John",
+  "id": 1,
+  "age": 40
+}
+
+00:12:58.539 karate.env system property was:  
+00:12:58.878 [print] id = 1
+00:12:58.888 karate.env system property was:  
+00:12:59.332 [print] name length: 4
+00:12:59.348 karate.env system property was:  
+00:12:59.819 [print] lastname length: 3
+00:12:59.828 karate.env system property was:  
+00:13:00.182 karate.env system property was:  

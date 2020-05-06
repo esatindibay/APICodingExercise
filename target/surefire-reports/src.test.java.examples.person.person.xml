@@ -1,0 +1,14 @@
+<testsuite failures="1" name="src/test/java/examples/person/person.feature" skipped="0" tests="1" time="1.991507">
+  <testcase classname="src.test.java.examples.person.person" name="verify HTTP status code is 200 OK for GET method" time="1.991507">
+    <failure message="person.feature:17 - assert evaluated to false: responseTime &lt; 500">* url endPoint ............................................................ passed
+* method get .............................................................. passed
+* status 200 .............................................................. passed
+* match responseStatus == 200 ............................................. passed
+* print responseTime ...................................................... passed
+* assert responseTime &lt; 500 ............................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: person.feature:17 - assert evaluated to false: responseTime &lt; 500&#13;
+	at ✽.* assert responseTime &lt; 500 (person.feature:17)</failure>
+  </testcase>
+</testsuite>

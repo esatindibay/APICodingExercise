@@ -1,0 +1,8 @@
+{
+
+  "id": "#number? _ > 0",
+  "name": "#regex[a-zA-Z]{1,10}",
+  "last": "#regex[a-zA-Z]{1,10}",
+  "age": "#number? _ > 0 && _ < 120",
+  "gender": "#regex[MF]"
+}

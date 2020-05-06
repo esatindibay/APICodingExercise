@@ -1,0 +1,418 @@
+22:49:58.339 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+22:49:58.347 [pool-1-thread-1] INFO  com.intuit.karate - found scenario at line: 13 - ^validate the response body$
+22:49:58.699 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+22:49:59.471 [ForkJoinPool-1-worker-3] DEBUG com.intuit.karate - request:
+1 > GET http://v2eok.mocklab.io/customer/a
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: v2eok.mocklab.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/11.0.2)
+
+22:49:59.919 [ForkJoinPool-1-worker-3] DEBUG com.intuit.karate - response time in milliseconds: 439.69
+1 < 200
+1 < Content-Type: application/json;charset=utf-8
+1 < Matched-Stub-Id: 5b341efe-4a21-43a4-9cf4-4e94d728eb5d
+1 < Matched-Stub-Name: GET PII A
+1 < Vary: Accept-Encoding, User-Agent
+{
+  "id": 1,
+  "name": "John",
+  "last":"Doe",
+  "age":40,
+  "gender":"M"
+}
+
+22:49:59.931 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] {
+  "last": "Doe",
+  "gender": "M",
+  "name": "John",
+  "id": 1,
+  "age": 40
+}
+
+22:50:00.247 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<fail>> feature 1 of 1: src/test/java/examples/person/person.feature
+22:51:10.616 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+22:51:10.628 [pool-1-thread-1] INFO  com.intuit.karate - found scenario at line: 9 - ^verify HTTP status code is 200 OK for GET method$
+22:51:10.972 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+22:51:11.896 [ForkJoinPool-1-worker-3] DEBUG com.intuit.karate - request:
+1 > GET http://v2eok.mocklab.io/customer/a
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: v2eok.mocklab.io
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/11.0.2)
+
+22:51:12.240 [ForkJoinPool-1-worker-3] DEBUG com.intuit.karate - response time in milliseconds: 341.27
+1 < 200
+1 < Content-Type: application/json;charset=utf-8
+1 < Matched-Stub-Id: 5b341efe-4a21-43a4-9cf4-4e94d728eb5d
+1 < Matched-Stub-Name: GET PII A
+1 < Vary: Accept-Encoding, User-Agent
+{
+  "id": 1,
+  "name": "John",
+  "last":"Doe",
+  "age":40,
+  "gender":"M"
+}
+
+22:51:12.400 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 1: src/test/java/examples/person/person.feature
+22:51:59.793 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+22:51:59.801 [pool-1-thread-1] INFO  com.intuit.karate - found scenario at line: 9 - ^verify HTTP status code is 200 OK for GET method$
+22:52:00.188 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+22:52:01.657 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 1: src/test/java/examples/person/person.feature
+22:52:54.355 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+22:52:54.363 [pool-1-thread-1] INFO  com.intuit.karate - found scenario at line: 13 - ^validate the response body$
+22:52:54.802 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+22:52:56.126 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] {
+  "last": "Doe",
+  "gender": "M",
+  "name": "John",
+  "id": 1,
+  "age": 40
+}
+
+22:52:56.310 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 1: src/test/java/examples/person/person.feature
+22:53:47.079 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+22:53:47.087 [pool-1-thread-1] INFO  com.intuit.karate - found scenario at line: 9 - ^verify HTTP status code is 200 OK for GET method$
+22:53:47.419 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+22:53:48.723 [ForkJoinPool-1-worker-3] ERROR com.intuit.karate - status code was: 200, expected: 201, response time: 514, url: http://v2eok.mocklab.io/customer/a, response: {"last":"Doe","gender":"M","name":"John","id":1,"age":40}
+22:53:48.891 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<fail>> feature 1 of 1: src/test/java/examples/person/person.feature
+22:55:04.156 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+22:55:04.164 [pool-1-thread-1] INFO  com.intuit.karate - found scenario at line: 9 - ^verify HTTP status code is 200 OK for GET method$
+22:55:04.492 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+22:55:05.845 [ForkJoinPool-1-worker-3] ERROR com.intuit.karate - assertion failed: path: $, actual: 200, NOT expected: 200, reason: equal
+22:55:06.005 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<fail>> feature 1 of 1: src/test/java/examples/person/person.feature
+22:58:14.132 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+22:58:14.139 [pool-1-thread-1] INFO  com.intuit.karate - found scenario at line: 14 - ^display the response body$
+22:58:14.525 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+22:58:16.248 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] {
+  "last": "Doe",
+  "gender": "M",
+  "name": "John",
+  "id": 1,
+  "age": 40
+}
+
+22:58:16.300 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] id =  1
+22:58:16.314 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] id = 1
+22:58:16.578 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 1: src/test/java/examples/person/person.feature
+23:28:59.368 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+23:28:59.373 [pool-1-thread-1] INFO  com.intuit.karate - found scenario at line: 14 - ^display the response body$
+23:28:59.682 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+23:29:00.678 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] {
+  "last": "Doe",
+  "gender": "M",
+  "name": "John",
+  "id": 1,
+  "age": 40
+}
+
+23:29:00.691 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] id = 1
+23:29:00.854 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<fail>> feature 1 of 1: src/test/java/examples/person/person.feature
+23:29:22.735 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+23:29:22.746 [pool-1-thread-1] INFO  com.intuit.karate - found scenario at line: 14 - ^display the response body$
+23:29:23.016 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+23:29:23.915 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] {
+  "last": "Doe",
+  "gender": "M",
+  "name": "John",
+  "id": 1,
+  "age": 40
+}
+
+23:29:23.927 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] id = 1
+23:29:24.049 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 1: src/test/java/examples/person/person.feature
+23:29:46.239 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+23:29:46.245 [pool-1-thread-1] INFO  com.intuit.karate - found scenario at line: 14 - ^display the response body$
+23:29:46.478 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+23:29:47.413 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] {
+  "last": "Doe",
+  "gender": "M",
+  "name": "John",
+  "id": 1,
+  "age": 40
+}
+
+23:29:47.425 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] id = 1
+23:29:47.428 [ForkJoinPool-1-worker-3] ERROR com.intuit.karate - assertion failed: assert evaluated to false: getId > 5
+23:29:47.536 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<fail>> feature 1 of 1: src/test/java/examples/person/person.feature
+23:34:59.678 [main] ERROR com.intuit.karate.core.FeatureParser - syntax error: mismatched input '*' expecting <EOF>
+23:34:59.684 [main] ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: src/test/java/examples/person/person.feature - mismatched input '*' expecting <EOF>
+23:34:59.684 [main] ERROR com.intuit.karate.Runner - karate parallel runner failed: 
+23:35:11.304 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+23:35:11.308 [pool-1-thread-1] INFO  com.intuit.karate - found scenario at line: 14 - ^display the response body$
+23:35:11.544 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+23:35:12.504 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] {
+  "last": "Doe",
+  "gender": "M",
+  "name": "John",
+  "id": 1,
+  "age": 40
+}
+
+23:35:12.515 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] id = 1
+23:35:12.527 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] 4
+23:35:12.634 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 1: src/test/java/examples/person/person.feature
+23:36:27.335 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+23:36:27.340 [pool-1-thread-1] INFO  com.intuit.karate - found scenario at line: 14 - ^display the response body$
+23:36:27.583 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+23:36:28.486 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] {
+  "last": "Doe",
+  "gender": "M",
+  "name": "John",
+  "id": 1,
+  "age": 40
+}
+
+23:36:28.498 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] id = 1
+23:36:28.510 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] 4
+23:36:28.619 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 1: src/test/java/examples/person/person.feature
+23:37:24.108 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+23:37:24.357 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+23:37:25.273 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+23:37:25.711 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] {
+  "last": "Doe",
+  "gender": "M",
+  "name": "John",
+  "id": 1,
+  "age": 40
+}
+
+23:37:25.722 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] id = 1
+23:37:25.734 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] 4
+23:37:25.740 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+23:37:25.847 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 1: src/test/java/examples/person/person.feature
+23:40:15.692 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+23:40:15.953 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+23:40:16.986 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+23:40:17.437 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] {
+  "last": "Doe",
+  "gender": "M",
+  "name": "John",
+  "id": 1,
+  "age": 40
+}
+
+23:40:17.443 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+23:40:17.875 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] id = 1
+23:40:17.887 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] 4
+23:40:17.996 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 1: src/test/java/examples/person/person.feature
+23:48:52.179 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+23:48:52.192 [pool-1-thread-1] INFO  com.intuit.karate - found scenario at line: 42 - ^validate that age is between 0 and 120$
+23:48:52.468 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+23:48:53.647 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<fail>> feature 1 of 1: src/test/java/examples/person/person.feature
+23:49:11.757 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+23:49:11.767 [pool-1-thread-1] INFO  com.intuit.karate - found scenario at line: 42 - ^validate that age is between 0 and 120$
+23:49:12.001 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+23:49:13.039 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 1: src/test/java/examples/person/person.feature
+23:52:45.230 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+23:52:45.235 [pool-1-thread-1] INFO  com.intuit.karate - found scenario at line: 46 - ^validate gender is nothing but F or M$
+23:52:45.479 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+23:52:46.496 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 1: src/test/java/examples/person/person.feature
+23:53:01.698 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+23:53:01.706 [pool-1-thread-1] INFO  com.intuit.karate - found scenario at line: 46 - ^validate gender is nothing but F or M$
+23:53:01.960 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+23:53:02.990 [ForkJoinPool-1-worker-3] ERROR com.intuit.karate - assertion failed: assert evaluated to false: getGender == "M" && getGender == "F"
+23:53:03.102 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<fail>> feature 1 of 1: src/test/java/examples/person/person.feature
+23:53:18.285 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+23:53:18.289 [pool-1-thread-1] INFO  com.intuit.karate - found scenario at line: 46 - ^validate gender is nothing but F or M$
+23:53:18.519 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+23:53:19.484 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 1: src/test/java/examples/person/person.feature
+23:53:59.506 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+23:53:59.511 [pool-1-thread-1] INFO  com.intuit.karate - found scenario at line: 42 - ^validate that age is between 0 and 120$
+23:53:59.770 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+23:54:00.720 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<fail>> feature 1 of 1: src/test/java/examples/person/person.feature
+00:03:13.067 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+00:03:13.320 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+00:03:14.265 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+00:03:14.574 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] {
+  "last": "Doe",
+  "gender": "M",
+  "name": "John",
+  "id": 1,
+  "age": 40
+}
+
+00:03:14.580 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+00:03:14.932 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] id = 1
+00:03:14.942 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+00:03:15.337 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] 4
+00:03:15.349 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+00:03:15.805 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] 3
+00:03:15.814 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+00:03:16.143 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+00:03:16.675 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 1: src/test/java/examples/person/person.feature
+00:03:52.675 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+00:03:52.680 [pool-1-thread-1] INFO  com.intuit.karate - found scenario at line: 24 - ^validate id is positive$
+00:03:52.938 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+00:03:53.734 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] id = 1
+00:03:53.841 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 1: src/test/java/examples/person/person.feature
+00:04:28.921 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+00:04:29.200 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+00:04:30.105 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+00:04:30.537 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] {
+  "last": "Doe",
+  "gender": "M",
+  "name": "John",
+  "id": 1,
+  "age": 40
+}
+
+00:04:30.544 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+00:04:30.886 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] id = 1
+00:04:30.896 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+00:04:31.214 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] 4
+00:04:31.223 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+00:04:31.662 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] 3
+00:04:31.671 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+00:04:31.999 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+00:04:32.625 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 1: src/test/java/examples/person/person.feature
+00:06:56.694 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+00:06:56.925 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+00:06:57.860 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+00:06:58.238 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] {
+  "last": "Doe",
+  "gender": "M",
+  "name": "John",
+  "id": 1,
+  "age": 40
+}
+
+00:06:58.244 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+00:06:58.657 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] id = 1
+00:06:58.666 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+00:06:59.026 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] name length: 4
+00:06:59.035 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+00:06:59.459 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] lastname length: 3
+00:06:59.468 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+00:06:59.960 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+00:07:00.448 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 1: src/test/java/examples/person/person.feature
+00:08:17.965 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+00:08:18.308 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+00:08:19.489 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+00:08:19.984 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] {
+  "last": "Doe",
+  "gender": "M",
+  "name": "John",
+  "id": 1,
+  "age": 40
+}
+
+00:08:19.992 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+00:08:20.407 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] id = 1
+00:08:20.417 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+00:08:20.865 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] name length: 4
+00:08:20.875 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+00:08:21.228 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] lastname length: 3
+00:08:21.237 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+00:08:21.687 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+00:08:22.228 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 1: src/test/java/examples/person/person.feature
+00:09:38.799 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+00:09:38.803 [pool-1-thread-1] INFO  com.intuit.karate - found scenario at line: 11 - ^verify HTTP status code is 200 OK for GET method$
+00:09:39.025 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+00:09:39.915 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 1: src/test/java/examples/person/person.feature
+00:10:13.954 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+00:10:13.959 [pool-1-thread-1] INFO  com.intuit.karate - found scenario at line: 11 - ^verify HTTP status code is 200 OK for GET method$
+00:10:14.197 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+00:10:15.092 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] 400
+00:10:15.208 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 1: src/test/java/examples/person/person.feature
+00:10:44.779 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+00:10:44.783 [pool-1-thread-1] INFO  com.intuit.karate - found scenario at line: 11 - ^verify HTTP status code is 200 OK for GET method$
+00:10:45.074 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+00:10:46.149 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] 523
+00:10:46.153 [ForkJoinPool-1-worker-3] ERROR com.intuit.karate - assertion failed: assert evaluated to false: responseTime < 500
+00:10:46.252 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<fail>> feature 1 of 1: src/test/java/examples/person/person.feature
+00:10:59.085 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+00:10:59.095 [pool-1-thread-1] INFO  com.intuit.karate - found scenario at line: 11 - ^verify HTTP status code is 200 OK for GET method$
+00:10:59.344 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+00:11:00.209 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] 408
+00:11:00.320 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 1: src/test/java/examples/person/person.feature
+00:11:08.112 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+00:11:08.116 [pool-1-thread-1] INFO  com.intuit.karate - found scenario at line: 11 - ^verify HTTP status code is 200 OK for GET method$
+00:11:08.361 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+00:11:09.249 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] 381
+00:11:09.350 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 1: src/test/java/examples/person/person.feature
+00:12:57.280 [main] INFO  com.intuit.karate - karate.env system property was:  
+00:12:58.077 [main] INFO  com.intuit.karate - [print] 350
+00:12:58.098 [main] INFO  com.intuit.karate - karate.env system property was:  
+00:12:58.532 [main] INFO  com.intuit.karate - [print] {
+  "last": "Doe",
+  "gender": "M",
+  "name": "John",
+  "id": 1,
+  "age": 40
+}
+
+00:12:58.538 [main] INFO  com.intuit.karate - karate.env system property was:  
+00:12:58.878 [main] INFO  com.intuit.karate - [print] id = 1
+00:12:58.888 [main] INFO  com.intuit.karate - karate.env system property was:  
+00:12:59.332 [main] INFO  com.intuit.karate - [print] name length: 4
+00:12:59.347 [main] INFO  com.intuit.karate - karate.env system property was:  
+00:12:59.819 [main] INFO  com.intuit.karate - [print] lastname length: 3
+00:12:59.828 [main] INFO  com.intuit.karate - karate.env system property was:  
+00:13:00.182 [main] INFO  com.intuit.karate - karate.env system property was:  
+00:22:47.222 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+00:22:47.227 [pool-1-thread-1] INFO  com.intuit.karate - found scenario at line: 53 - ^validating the response data structure$
+00:22:47.475 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+00:22:48.636 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 1: src/test/java/examples/person/person.feature
+00:26:49.354 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+00:26:49.359 [pool-1-thread-1] INFO  com.intuit.karate - found scenario at line: 55 - ^validating the response data structure$
+00:26:49.592 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+00:26:50.589 [ForkJoinPool-1-worker-3] ERROR com.intuit.karate - assertion failed: path: $.gender, actual: 'M', expected: '#regex[CP]', reason: regex match failed
+00:26:50.689 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<fail>> feature 1 of 1: src/test/java/examples/person/person.feature
+00:27:12.587 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+00:27:12.600 [pool-1-thread-1] INFO  com.intuit.karate - found scenario at line: 55 - ^validating the response data structure$
+00:27:12.854 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+00:27:13.869 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 1: src/test/java/examples/person/person.feature
+01:13:38.065 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+01:13:38.498 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+01:13:42.657 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] 3598
+01:13:42.666 [ForkJoinPool-1-worker-3] ERROR com.intuit.karate - assertion failed: assert evaluated to false: responseTime < 500
+01:13:42.681 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+01:13:43.040 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] {
+  "last": "Doe",
+  "gender": "M",
+  "name": "John",
+  "id": 1,
+  "age": 40
+}
+
+01:13:43.051 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+01:13:43.418 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] id = 1
+01:13:43.438 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+01:13:43.931 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] name length: 4
+01:13:43.948 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+01:13:44.370 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] lastname length: 3
+01:13:44.393 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+01:13:44.904 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+01:13:45.262 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+01:13:45.911 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<fail>> feature 1 of 1: src/test/java/examples/person/person.feature
+01:14:14.259 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+01:14:14.778 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+01:14:17.644 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] 2202
+01:14:17.658 [ForkJoinPool-1-worker-3] ERROR com.intuit.karate - assertion failed: assert evaluated to false: responseTime < 500
+01:14:17.674 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+01:14:18.324 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] {
+  "last": "Doe",
+  "gender": "M",
+  "name": "John",
+  "id": 1,
+  "age": 40
+}
+
+01:14:18.336 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+01:14:19.868 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] id = 1
+01:14:19.888 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+01:14:20.219 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] name length: 4
+01:14:20.236 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+01:14:20.742 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] lastname length: 3
+01:14:20.774 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+01:14:21.176 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+01:14:21.685 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+01:14:22.366 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<fail>> feature 1 of 1: src/test/java/examples/person/person.feature
+01:14:53.498 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+01:14:53.504 [pool-1-thread-1] INFO  com.intuit.karate - found scenario at line: 11 - ^verify HTTP status code is 200 OK for GET method$
+01:14:54.003 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
+01:14:56.099 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - [print] 1494
+01:14:56.127 [ForkJoinPool-1-worker-3] ERROR com.intuit.karate - assertion failed: assert evaluated to false: responseTime < 500
+01:14:56.355 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<fail>> feature 1 of 1: src/test/java/examples/person/person.feature
